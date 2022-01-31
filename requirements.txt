@@ -1,7 +1,6 @@
 numpy >= 1.13
 matplotlib >= 3.0.0
 ipython >= 4.0.0
-csv >= 1.0
 cv2 >= 4.2.0
 skimage >= 0.16.2
 
