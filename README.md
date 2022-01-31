@@ -10,7 +10,7 @@ will install all of the required dependencies for you:
 ```
 python3 -m venv my_env
 source my_env/bin/activate (for Mac)
-Scripts/activate (for Windows)
+my_env\Scripts\activate (for Windows)
 pip install -r requirements.txt
 ```
 
