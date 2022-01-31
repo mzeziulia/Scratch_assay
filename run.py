@@ -19,11 +19,11 @@ from functions import contour_selection as cont_selection
 from functions import plotting_function as plot_function
 
 
-date_dir=input ('Data source directory') # data sourse
-conditions_entry=input ('Enter condition names separated space') # list of conditions
+date_dir = input ('Data source directory') # data sourse
+conditions_entry = input ('Enter condition names separated space') # list of conditions
 conditions = list(map(int,conditions_entry.split(' ')))
-frame_t0 = 0 # reference frame for the original scratch area
-frame_last=12 # last frame
+frame_t0 = int(input ('First frame number')) # reference frame for the original scratch area
+frame_last = int(input ('Last frame number')) # last frame
 
 cell_number_list=np.empty([1, frame_last-frame_t0+1]) # create an empty list for further storage of cell numbers
 
