@@ -20,8 +20,13 @@ from functions import plotting_function as plot_function
 
 
 date_dir = input ('Data source directory') # data sourse
+conditions_number = int(input("Number of conditions to be analyzed"))
 conditions_entry = input ('Enter condition names separated space') # list of conditions
-conditions = list(map(int,conditions_entry.split(' ')))
+if conditions_number > 1:
+    conditions = list(map(str,conditions_entry.split(' ')))
+else:
+    conditions = [conditions_entry]
+
 frame_t0 = int(input ('First frame number')) # reference frame for the original scratch area
 frame_last = int(input ('Last frame number')) # last frame
 
